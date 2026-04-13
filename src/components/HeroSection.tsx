@@ -59,9 +59,9 @@ const HeroSection = () => {
           className="flex items-center justify-center gap-6"
         >
           {[
-            { icon: Github, href: "https://github.com", label: "GitHub" },
-            { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-            { icon: Code2, href: "https://leetcode.com", label: "LeetCode" },
+            { icon: Github, href: "https://github.com/sucharita-pal-04", label: "GitHub" },
+            { icon: Linkedin, href: "https://www.linkedin.com/in/sucharita-p-2b2305293/", label: "LinkedIn" },
+            { icon: Code2, href: "https://leetcode.com/u/pal_178/", label: "LeetCode" },
           ].map(({ icon: Icon, href, label }) => (
             <a
               key={label}
