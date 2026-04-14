@@ -23,12 +23,9 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
         return stored;
       }
 
-      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        document.documentElement.classList.add("dark");
-        return "dark";
-      }
-      document.documentElement.classList.remove("dark");
-      return "light";
+      // Default to dark theme if no preference is stored
+      document.documentElement.classList.add("dark");
+      return "dark";
     }
     return "dark";
   });
