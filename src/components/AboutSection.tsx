@@ -23,7 +23,7 @@ const AboutSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="glass rounded-2xl p-8 md:p-10 glow-border"
+          className="glass rounded-2xl p-8 md:p-10 glow-border card-3d floating magnetic-hover"
         >
           <p className="text-muted-foreground leading-relaxed mb-6 text-base md:text-lg">
             I'm a final-year Computer Science student specializing in AI/ML at Dr. A.P.J. Abdul Kalam Technical University,
@@ -42,7 +42,7 @@ const AboutSection = () => {
               { icon: MapPin, text: "Kanpur, India" },
               { icon: Sparkles, text: "250+ LeetCode Problems" },
             ].map(({ icon: Icon, text }) => (
-              <div key={text} className="flex items-center gap-2 text-sm text-muted-foreground">
+              <div key={text} className="flex items-center gap-2 text-sm text-muted-foreground magnetic-hover">
                 <Icon size={16} className="text-primary" />
                 <span>{text}</span>
               </div>

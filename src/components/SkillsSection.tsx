@@ -7,19 +7,19 @@ const skillCategories = [
   },
   {
     title: "AI / ML",
-    skills: ["Reinforcement Learning", "GANs", "Supervised ML", "Computer Vision"],
+    skills: ["Reinforcement Learning", "GANs", "Computer Vision", "OpenCV", "MediaPipe", "NumPy",],
   },
   {
-    title: "Frameworks & Libraries",
-    skills: ["React.js", "OpenCV", "MediaPipe", "NumPy", "Firebase"],
+    title: "Frameworks",
+    skills: ["React", "Firebase", "Tailwind CSS", "Vercel", "Node.js", "Express",],
   },
   {
     title: "Core CS",
-    skills: ["Data Structures & Algorithms", "DBMS", "OOP", "System Design"],
+    skills: ["Data Structures & Algorithms", "DBMS", "OOP", "System Design", "CN"],
   },
   {
     title: "Tools & Platforms",
-    skills: ["Git", "GitHub", "VS Code", "Clerk", "Google Gemini API"],
+    skills: ["Git", "GitHub", "VS Code", "Clerk", "Google Gemini API", "Vercel"],
   },
 ];
 
@@ -48,7 +48,7 @@ const SkillsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="glass rounded-2xl p-6 group hover:border-primary/30 transition-colors"
+              className="glass rounded-2xl p-6 group hover:border-primary/30 transition-colors card-3d floating magnetic-hover"
             >
               <h3 className="text-sm font-display font-semibold text-primary uppercase tracking-wider mb-4">
                 {cat.title}
@@ -57,7 +57,7 @@ const SkillsSection = () => {
                 {cat.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1.5 rounded-lg text-xs font-medium bg-secondary text-secondary-foreground hover:bg-primary/10 hover:text-primary transition-colors cursor-default"
+                    className="px-3 py-1.5 rounded-lg text-xs font-medium bg-secondary text-secondary-foreground hover:bg-primary/10 hover:text-primary transition-colors cursor-default magnetic-hover shine-effect"
                   >
                     {skill}
                   </span>

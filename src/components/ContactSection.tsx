@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, Github, Linkedin, Code2, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Code2, Github, Linkedin, Mail, Phone } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -25,7 +25,7 @@ const ContactSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="glass rounded-2xl p-8 glow-border mb-10"
+          className="glass rounded-2xl p-8 glow-border mb-10 card-3d floating magnetic-hover"
         >
           <a
             href="mailto:sucharita.pal04@gmail.com"
@@ -58,7 +58,7 @@ const ContactSection = () => {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+              className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors magnetic-hover"
             >
               <Icon size={16} />
               {label}

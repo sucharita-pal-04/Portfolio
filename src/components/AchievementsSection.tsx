@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Trophy, Code2, Award, GraduationCap } from "lucide-react";
+import { Award, Code2, GraduationCap, Trophy } from "lucide-react";
 
 const achievements = [
   {
@@ -54,7 +54,7 @@ const AchievementsSection = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="glass rounded-2xl p-6 group hover:border-primary/30 transition-colors"
+              className="glass rounded-2xl p-6 group hover:border-primary/30 transition-colors card-3d floating magnetic-hover"
             >
               <item.icon size={22} className="text-primary mb-4" />
               <h3 className="font-display font-semibold text-base mb-2">{item.title}</h3>
